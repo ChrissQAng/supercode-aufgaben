@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: green;
+}
+a { 
+color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: #7E3661;
+}
+
+a:active {
+font-size: 3em;
+}
+
+ a:visited  {
+  color: black ;
+}

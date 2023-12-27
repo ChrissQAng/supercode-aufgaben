@@ -1,0 +1,31 @@
+h3 {
+  font-size: 48px;
+  background-color: gray;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-size: 20px;
+}
+
+li {
+  color: #777;
+  font-size: 20px;
+}
+
+li:first-of-type {
+  text-decoration: overline;
+}
+
+li:nth-of-type(2) {
+  text-align: center;
+  text-decoration: line-through;
+}
+
+li:last-of-type {
+  text-align: right;
+  text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  border: 3px solid #ffcc00;
+}
+
+p::before {
+  content: "Info ";
+  background-color: #ffcc00;
+}
+
+p::selection {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+p::after {
+  content: "\2665";
+}

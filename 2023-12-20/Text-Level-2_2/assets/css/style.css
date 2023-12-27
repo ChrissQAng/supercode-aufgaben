@@ -1,0 +1,41 @@
+@font-face {
+  font-family: ChelseaMarket;
+  src: url(../font/ChelseaMarket-Regular.ttf);
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url(../font/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: pressstart;
+  src: url(../font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Black.ttf);
+}
+
+h1 {
+  font-family: ChelseaMarket;
+  background-color: yellow;
+  font-size: 26px;
+  text-align: center;
+}
+
+p {
+  font-family: pressstart;
+  line-height: 20px;
+}
+
+a {
+  font-family: pacifico;
+  text-decoration: none;
+  color: black;
+}
+
+em {
+  text-shadow: 2px -2px 1px red;
+}

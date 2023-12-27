@@ -1,0 +1,48 @@
+:root {
+  --content: #9bc1bc;
+  --padding: #f4f1bb;
+  --border: #546a7b;
+  --margin: #ed6a5a;
+}
+
+h2 {
+  margin: 50px 10px;
+}
+
+div {
+  margin: 50px;
+  height: 150px;
+  width: 150px;
+  background-color: var(--content);
+  box-shadow: -30px 0px 0px var(--margin), 0px -30px 0px var(--margin),
+    -30px -30px 0px var(--margin), -30px 30px 0px var(--margin),
+    30px -30px 0px var(--margin), 30px 30px 0px var(--margin),
+    30px 0px 0px var(--margin), 0 30px 0px var(--margin);
+  border: 15px solid var(--padding);
+  outline: 7px solid var(--border);
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 0 -20px;
+}
+
+ul li::before {
+  content: "\25BA";
+}
+
+ul li:first-of-type:before {
+  color: var(--content);
+}
+
+ul li:nth-of-type(2):before {
+  color: var(--padding);
+}
+
+ul li:nth-of-type(3):before {
+  color: var(--border);
+}
+
+ul li:last-of-type:before {
+  color: var(--margin);
+}
