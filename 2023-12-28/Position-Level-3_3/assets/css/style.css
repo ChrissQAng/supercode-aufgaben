@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: robo, Arial, Helvetica, sans-serif;
+}
+/*img {
+  max-width: 100%;
+} */
+@font-face {
+  font-family: robo;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+div {
+  background-color: #7b8ce4;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  font-family: robo, Arial, Helvetica, sans-serif;
+  /*position: absolute; */
+  padding: 30px 0 0 30px;
+  color: white;
+  font-size: 30px;
+}
+nav {
+  font-family: robo, Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 20px;
+}
+article {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  width: 350px;
+  text-align: center;
+}
+article p:first-of-type {
+  font-size: 40px;
+}
+article p:last-of-type {
+  font-size: 16px;
+  font-weight: ;
+}
+.button {
+  position: absolute;
+  left: 100px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  margin-top: 30px;
+  font-size: 20px;
+}
