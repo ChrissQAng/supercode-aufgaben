@@ -1,0 +1,30 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+
+.eule {
+  width: 400px;
+}
+.haustuer {
+  width: 50%;
+}
+.kueche {
+  width: 20em;
+}
+.meer {
+  width: 40rem;
+}
+.taucher {
+  width: 75vw;
+}
+.wueste {
+  height: 75vh;
+}
+/* es fällt auf, dass sich absolute Größen wie
+px,em,rem nicht die Größe der Bilder verändern -
+die restlichen schon */
