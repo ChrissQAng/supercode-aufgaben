@@ -7,18 +7,21 @@
   max-width: 100%;
 } */
 div {
-  position: relative;
-}
-img {
+  background-image: url(../img/mann-mit-haendy.avif);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }
 h1 {
   text-align: center;
+  color: white;
 }
 article {
-  position: absolute;
   width: 30%;
-  margin: 200px auto 0 auto;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: rgba(117, 37, 191, 0.458);
   border: 2px solid black;
 }
