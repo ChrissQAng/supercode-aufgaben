@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+div {
+  position: relative;
+}
+img {
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+}
+article {
+  position: absolute;
+  width: 30%;
+  margin: 200px auto 0 auto;
+  border: 2px solid black;
+}
