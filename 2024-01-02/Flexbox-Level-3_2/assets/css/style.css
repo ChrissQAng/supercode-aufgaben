@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+html {
+  font-family: lato, Arial, Helvetica, sans-serif;
+}
+
+nav {
+  height: 120px;
+  display: flex;
+  position: sticky;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 8px;
+}
+img {
+  width: 22px;
+  height: 22px;
+  margin-left: 40px;
+  position: relative;
+}
+nav p {
+  font-size: 24px;
+  margin-right: 40px;
+}
+nav div a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+.rightlinks {
+  margin: 0 30px 0 auto;
+}
+/* ----------main */
+
+main {
+  height: 845px;
+  background-color: #d9e8e5;
+}
+h2 {
+  padding-top: 80px;
+  margin-left: 100px;
+  font-size: 24px;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* width: 1200px; */
+  margin-left: 110px;
+}
+main img {
+  width: 340px;
+  height: 228px;
+  position: relative;
+}
+/* ----------------------price */
+
+.price {
+  position: relative;
+  top: -30px;
+  text-align: right;
+  padding-right: 10px;
+}
