@@ -3,6 +3,73 @@
   margin: 0;
   padding: 0;
 }
-/*img {
+@font-face {
+  font-family: rail;
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+img {
   max-width: 100%;
-} */
+}
+html {
+  font-family: rail, Arial, Helvetica, sans-serif;
+}
+nav {
+  height: 50px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 186px;
+}
+nav p {
+  color: #666;
+  font-size: 24px;
+}
+nav a {
+  color: #4c4c4c;
+  font-size: 13px;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  column-gap: 30px;
+}
+.links a:hover {
+  color: rgb(129, 129, 70);
+}
+
+/* ----------main */
+
+main {
+  background-image: url(../img/seajpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h2 {
+  font-size: 60px;
+}
+.buttons {
+  margin-top: 36px;
+}
+.buttons a:first-of-type {
+  background-color: #745cf9;
+  border: 2px solid #745cf9;
+  padding: 15px 50px;
+  margin-right: 40px;
+  color: white;
+  text-decoration: none;
+}
+.buttons a:last-of-type {
+  border: 2px solid white;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+}
