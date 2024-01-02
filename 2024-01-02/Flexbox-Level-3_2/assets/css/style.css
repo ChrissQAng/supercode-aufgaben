@@ -10,7 +10,12 @@
 html {
   font-family: lato, Arial, Helvetica, sans-serif;
 }
-
+header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+}
 nav {
   height: 120px;
   display: flex;
