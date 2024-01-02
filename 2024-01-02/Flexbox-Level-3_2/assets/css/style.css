@@ -31,6 +31,7 @@ nav p {
 }
 nav div a {
   font-size: 16px;
+  margin-left: 30px;
   color: black;
   text-decoration: none;
 }
