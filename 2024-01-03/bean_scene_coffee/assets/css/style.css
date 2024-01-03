@@ -34,6 +34,7 @@ h3 {
   color: #603809;
   padding-bottom: 20px;
 }
+
 /* ------------ Header */
 
 header {
@@ -107,7 +108,7 @@ h2 {
   flex-direction: column;
 }
 
-.section2 a:first-child {
+.section2 .cupsection a:first-of-type {
   align-self: flex-start;
 }
 
