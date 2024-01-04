@@ -34,7 +34,8 @@ input {
 #textarea {
   height: 100px;
 }
-.required label::after {
+.required::after {
   content: "*";
   color: red;
+  text-transform: uppercase;
 }

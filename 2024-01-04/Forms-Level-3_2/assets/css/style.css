@@ -31,7 +31,7 @@ form {
 .buttons a {
   color: white;
   text-decoration: none;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   text-align: center;
   padding: 10px 20px;
   font-size: 12px;
@@ -61,7 +61,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   color: white;
   text-decoration: none;
   width: 100%;
@@ -73,4 +73,7 @@ h1 {
 #firstname,
 #lastname {
   background-color: black;
+}
+.yellow:hover {
+  background-color: yellow;
 }
