@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+form {
+  margin: 30px 80px;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.submit {
+  width: 300px;
+  padding: 10px 20px;
+  background-color: rgb(176, 204, 176);
+  color: white;
+}
+.submit:active {
+  background-color: rgb(46, 24, 24);
+}
+#textarea {
+  height: 100px;
+}
+.required label::after {
+  content: "*";
+  color: red;
+}
