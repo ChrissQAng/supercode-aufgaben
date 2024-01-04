@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+html {
+  color: white;
+}
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(28, 18, 18);
+  padding: 5px 10px;
+}
+.buttons {
+  display: flex;
+}
+.buttons a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  width: 140px;
+}
+.login {
+  background-color: rgb(96, 207, 96);
+}
+.signup:hover {
+  background-color: yellow;
+  color: black;
+}
+h1 {
+  font-size: 32px;
+}
+#email,
+#password {
+  background-color: black;
+  width: 100%;
+}
+.forgot {
+  align-self: flex-end;
+  font-size: 10px;
+  color: brown;
+}
+.bigbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(96, 207, 96);
+}
+
+#firstname,
+#lastname {
+  background-color: black;
+}
