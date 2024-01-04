@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+/* --------- basics */
+
+html {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* --------- header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 600px;
+  height: 100px;
+  background-color: rgb(32, 110, 110);
+  color: white;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+}
+/* -------- main */
+
+main {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ol {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5em;
+  color: rgb(32, 110, 110);
+  list-style: circle;
+}
+
+/* form style */
+
+label {
+  font-size: 12px;
+  color: black;
+  margin-bottom: -15px;
+}
+input {
+  border: 0.5px solid rgb(32, 110, 110);
+}
+ol {
+  margin-bottom: 50px;
+}
+
+li {
+  content: counter(step-counter);
+  margin-right: 20px;
+  font-size: 80%;
+  background-color: rgb(32, 110, 110);
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 11px;
+}
+
+/* ------ button and agree */
+
+.submit {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(32, 110, 110);
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 15px;
+  flex-direction: row-reverse;
+}
+
+/* .bottom label:last-of-type {
+  margin-left: 280px;
+}
+.bottom input:last-of-type {
+  margin-left: 20px;
+} */
