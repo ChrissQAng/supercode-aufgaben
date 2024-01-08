@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+div {
+  background-color: tan;
+  width: 150px;
+  height: 150px;
+  margin: 200px 0 0 200px;
+}
+div:hover {
+  animation: animation 2s ease-in-out alternate 0.5s;
+}
+@keyframes animation {
+  0%,
+  100% {
+    transform-origin: bottom left;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2) rotate(180deg);
+  }
+}
