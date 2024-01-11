@@ -64,8 +64,8 @@ header img {
 h1 {
   font-family: rock, Arial, Helvetica, sans-serif;
   position: absolute;
-  z-index: 1;
-  top: 3rem;
+  z-index: 10;
+  top: 5rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -214,4 +214,35 @@ footer {
   width: 100%;
 }
 .icons-wrapper img {
+}
+
+@media only screen and (max-width: 900px) {
+  .works-article {
+    flex-direction: row;
+  }
+  .works {
+    height: 55vh;
+  }
+  .menu-img {
+    display: flex;
+  }
+  .coffee-dog,
+  .img-wrapper {
+    width: 50vw;
+    height: 27rem;
+  }
+  .dog-food {
+    width: 100%;
+  }
+  .icons-wrapper {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .end-wrapper {
+    flex-direction: row;
+    padding: 0 1.8rem;
+  }
+  .end-wrapper p {
+    min-width: 20rem;
+  }
 }
