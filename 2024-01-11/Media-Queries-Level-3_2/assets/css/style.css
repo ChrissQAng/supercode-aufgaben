@@ -37,18 +37,16 @@ h5 {
 h6 {
   font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 }
-/* p,
+p,
 label {
   font-size: clamp(2rem, 2vw, 2rem);
 }
 a,
 li {
   font-size: clamp(2rem, 2vw, 2rem);
-} */
+}
 :root {
   --primary: #df8480;
-}
-.wrapper {
 }
 
 /* ------------- header */
@@ -74,7 +72,7 @@ h1 {
 header p {
   padding: 0 1.5rem;
   position: absolute;
-  font-size: 2rem;
+
   text-align: right;
   top: 10rem;
   right: 0;
@@ -87,7 +85,8 @@ header p {
 /* -------- section works */
 
 .works {
-  height: 60vh;
+  height: 65vh;
+  padding-bottom: 3rem;
 }
 h2 {
   display: flex;
@@ -116,7 +115,103 @@ h2 {
   font-weight: 900;
 }
 .works-article p {
-  font-size: 1.5rem;
   padding: 0 1.5rem;
   text-align: center;
+}
+/* -------- menue */
+
+.menue {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 3rem;
+}
+.food-img {
+  width: 100vw;
+}
+.coffee-dog {
+  height: 14rem;
+  object-fit: cover;
+}
+.dog-food {
+  height: 25rem;
+  object-fit: contain;
+}
+.img-wrapper {
+  position: relative;
+  padding: 3rem;
+}
+.img-wrapper p:nth-of-type(1) {
+  position: absolute;
+
+  top: 5rem;
+  left: 3rem;
+}
+.img-wrapper p:nth-of-type(2) {
+  position: absolute;
+
+  top: 12rem;
+  right: 3rem;
+}
+.img-wrapper p:nth-of-type(3) {
+  position: absolute;
+
+  bottom: 5rem;
+  left: 7rem;
+}
+.text-wrapper {
+  padding: 0 1.5rem;
+}
+.menue-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  text-align: center;
+}
+/* ------ footer */
+
+footer {
+  height: 40rem;
+  background-color: black;
+  color: white;
+  padding: 0 1.5rem;
+}
+.formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding-bottom: 4rem;
+}
+.formular label {
+  text-align: center;
+  padding-top: 1.8rem;
+}
+.formular input {
+  border-radius: 74px;
+  height: 4.5rem;
+  min-width: 38rem;
+}
+.formular input[type="button"] {
+  background-color: var(--primary);
+  color: white;
+}
+.formular input::placeholder {
+  text-align: center;
+}
+.end-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.icons-wrapper img {
 }
