@@ -3,6 +3,120 @@
   margin: 0;
   padding: 0;
 }
-/*img {
+img {
   max-width: 100%;
+}
+/* ----------- basics */
+@font-face {
+  font-family: rock;
+  src: url(../fonts/RockSalt-Regular.ttf);
+}
+@font-face {
+  font-family: nunito;
+  src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+html {
+  font-family: nunito, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: clamp(3rem, 4vw, 5rem);
+}
+h2 {
+  font-size: clamp(3rem, 4vw, 4.8rem);
+}
+h3 {
+  font-size: clamp(2.5rem, 3.3vw, 4rem);
+}
+h4 {
+  font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+}
+h5 {
+  font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+h6 {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+}
+/* p,
+label {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+a,
+li {
+  font-size: clamp(2rem, 2vw, 2rem);
 } */
+:root {
+  --primary: #df8480;
+}
+.wrapper {
+}
+
+/* ------------- header */
+
+header {
+  height: 100vh;
+  width: 100vw;
+}
+header img {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+h1 {
+  font-family: rock, Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 1;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header p {
+  padding: 0 1.5rem;
+  position: absolute;
+  font-size: 2rem;
+  text-align: right;
+  top: 10rem;
+  right: 0;
+  color: var(--primary);
+}
+.block {
+  display: block;
+}
+
+/* -------- section works */
+
+.works {
+  height: 60vh;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  background-color: var(--primary);
+  color: white;
+}
+.works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+.works-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.works-article span {
+  font-size: 3rem;
+  color: var(--primary);
+  font-weight: 900;
+}
+.works-article p {
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
