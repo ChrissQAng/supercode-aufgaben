@@ -25,6 +25,7 @@ div {
   width: 30vw;
   height: 10vw;
   border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.695);
   transform: rotateZ(8deg) rotateY(-20deg);
   transition: 2s;
 }
