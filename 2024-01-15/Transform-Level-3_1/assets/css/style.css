@@ -9,7 +9,7 @@ img {
 html {
   font-size: 30px;
 }
-body {
+.background-wrapper {
   background-color: chocolate;
 }
 .wrapper {
@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   perspective: 1000px;
 }
-div {
+article div {
   display: flex;
   justify-content: center;
   align-items: center;
