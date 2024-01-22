@@ -1,0 +1,13 @@
+@mixin flex1($display, $flex-direction, $gap, $align-items, $justify-content) {
+  display: $display;
+  flex-direction: $flex-direction;
+  gap: $gap;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin anchor($color) {
+  text-decoration: none;
+  color: $color;
+  font-size: 24px;
+}
