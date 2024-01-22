@@ -29,6 +29,10 @@ p {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 40px;
+}
+
 .button {
   padding: 10px 40px;
   background-color: #dfaa5b;
@@ -132,7 +136,7 @@ header a {
   position: absolute;
 }
 .rooms-rates .room-rates-flex article h4 {
-  bottom: 200px;
+  bottom: 180px;
   color: white;
 }
 .rooms-rates .room-rates-flex article a {
