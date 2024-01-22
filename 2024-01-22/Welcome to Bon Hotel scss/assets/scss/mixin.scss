@@ -11,3 +11,10 @@
   color: $color;
   font-size: 24px;
 }
+@mixin flex2($display, $flex-direction, $flex-wrap, $align-items, $justify-content){
+    display: $display;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

@@ -82,14 +82,20 @@ header {
 
 .facilities {
   h2 {
-    padding-top: 25px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     color: variables.$text-color-br;
     text-align: center;
+  }
+  span {
+    color: #dfaa5b;
   }
   .facilities-flex {
     @include mixin.flex1(flex, row, 50px, center, center);
     padding-bottom: 200px;
+    article {
+      @include mixin.flex1(flex, column, 30px, center, center);
+    }
   }
 }
 
@@ -99,7 +105,53 @@ header {
   h2 {
     text-align: center;
   }
+
   .room-rates-flex {
-    @include mixin.flex1(flex, row, 50px, center, center);
+    padding-top: 100px;
+    @include mixin.flex2(flex, row, wrap, center, center);
+    gap: 50px;
+    article {
+      @include mixin.flex2(flex, column, wrap, center, center);
+
+      position: relative;
+      h4,
+      a {
+        position: absolute;
+      }
+      h4 {
+        bottom: 200px;
+        color: white;
+      }
+      a {
+        bottom: 100px;
+      }
+    }
+  }
+}
+
+// -------------- booking
+
+.booking {
+  padding-top: 200px;
+  text-align: center;
+}
+.booking h2 {
+  padding-bottom: 50px;
+}
+
+// --------------- footer
+
+footer {
+  padding: 50px;
+  margin-top: 200px;
+  background-color: black;
+  color: variables.$text-color-wh;
+  @include mixin.flex1(flex, row, 30px, center, space-around);
+
+  article {
+    @include mixin.flex1(flex, column, 15px, flex-start, center);
+    input[type="email"] {
+      background-color: white;
+    }
   }
 }

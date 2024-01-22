@@ -83,10 +83,13 @@ header a {
 }
 
 .facilities h2 {
-  padding-top: 25px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 80px;
   color: #957554;
   text-align: center;
+}
+.facilities span {
+  color: #dfaa5b;
 }
 .facilities .facilities-flex {
   display: flex;
@@ -96,14 +99,73 @@ header a {
   justify-content: center;
   padding-bottom: 200px;
 }
+.facilities .facilities-flex article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
 
 .rooms-rates h2 {
   text-align: center;
 }
 .rooms-rates .room-rates-flex {
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+}
+.rooms-rates .room-rates-flex article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.rooms-rates .room-rates-flex article h4,
+.rooms-rates .room-rates-flex article a {
+  position: absolute;
+}
+.rooms-rates .room-rates-flex article h4 {
+  bottom: 200px;
+  color: white;
+}
+.rooms-rates .room-rates-flex article a {
+  bottom: 100px;
+}
+
+.booking {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.booking h2 {
+  padding-bottom: 50px;
+}
+
+footer {
+  padding: 50px;
+  margin-top: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+footer article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer article input[type=email] {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
