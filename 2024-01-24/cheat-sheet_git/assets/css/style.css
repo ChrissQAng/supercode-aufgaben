@@ -57,6 +57,8 @@ li {
 header {
   text-align: center;
   margin-bottom: 120px;
+  background: url(../img/Git-Logo-Black.svg) no-repeat right top;
+  background-size: contain;
 }
 main img {
   width: 70vw;
