@@ -1,0 +1,11 @@
+let num = 5;
+let anotherNum = 8;
+console.log(num == anotherNum);
+console.log(num > anotherNum);
+console.log(anotherNum < num);
+console.log(anotherNum >= num);
+console.log(anotherNum <= num);
+console.log(num == "5");
+console.log(num != 8);
+console.log(anotherNum != "5");
+console.log(anotherNum === "8");
