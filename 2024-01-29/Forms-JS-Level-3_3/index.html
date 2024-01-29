@@ -8,44 +8,46 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Background Generator</h1>
-      <form onsubmit="event">
-        <label for="red">Red</label>
-        <input
-          id="red"
-          name="red"
-          min="0"
-          max="255"
-          value="0"
-          step="1"
-          type="range"
-          onchange="changeBackground()"
-        />
-        <br />
-        <label for="green">Green</label>
-        <input
-          id="green"
-          name="green"
-          min="0"
-          max="255"
-          value="0"
-          step="1"
-          type="range"
-          onchange="changeBackground()"
-        />
-        <br />
-        <label for="blue">Blue</label>
-        <input
-          id="blue"
-          name="blue"
-          min="0"
-          max="255"
-          value="0"
-          step="1"
-          type="range"
-          onchange="changeBackground()"
-        />
-      </form>
+      <section>
+        <h1>Background Generator</h1>
+        <form onsubmit="event">
+          <label for="red">Red</label>
+          <input
+            id="red"
+            name="red"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            type="range"
+            onchange="changeBackground()"
+          />
+          <br />
+          <label for="green">Green</label>
+          <input
+            id="green"
+            name="green"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            type="range"
+            onchange="changeBackground()"
+          />
+          <br />
+          <label for="blue">Blue</label>
+          <input
+            id="blue"
+            name="blue"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            type="range"
+            onchange="changeBackground()"
+          />
+        </form>
+      </section>
       <script src="./assets/js/main.js"></script>
     </div>
   </body>
