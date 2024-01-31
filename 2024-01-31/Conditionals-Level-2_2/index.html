@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <form onsubmit="event">
+          <label for="air"
+            >Luftqualität : <span class="value-air"></span
+          ></label>
+          <br />
+          <input
+            id="air"
+            name="air"
+            min="1"
+            s
+            max="150"
+            value="10"
+            step="1"
+            type="range"
+            onchange="changeAir()"
+          />
+        </form>
+      </section>
+      <h2 class="health-concern"></h2>
+      <h2 class="heath-effect"></h2>
+      <script src="./assets/js/main.js"></script>
+    </div>
+  </body>
+</html>
