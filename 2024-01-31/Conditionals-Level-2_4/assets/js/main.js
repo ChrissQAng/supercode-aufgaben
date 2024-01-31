@@ -1,5 +1,5 @@
-const a = Number(prompt("Gib mir Zahl 1:"));
-const b = Number(prompt("Gib mir Zahl 2:"));
+const x = Number(prompt("Gib mir Zahl 1:"));
+const y = Number(prompt("Gib mir Zahl 2:"));
 
 function function1(a, b) {
   if (a === b) {
@@ -8,4 +8,4 @@ function function1(a, b) {
     console.log("Die Summe ist: " + (a + b));
   }
 }
-function1(a, b);
+function1(x, y);
