@@ -1,5 +1,5 @@
-function operation() {
-  const certainNumber = prompt("Gib mir eine bestimmte Zahl:");
+function operation(certainNumber) {
+  // const certainNumber = prompt("Gib mir eine bestimmte Zahl:");
   console.log("Bestimmte Zahl: " + certainNumber);
 
   const newNumber = certainNumber - 27;
@@ -11,4 +11,6 @@ function operation() {
     console.log("Die ursprüngliche Zahl ist kleiner oder gleich 27!");
   }
 }
-operation();
+operation(35);
+operation(74);
+operation(123);

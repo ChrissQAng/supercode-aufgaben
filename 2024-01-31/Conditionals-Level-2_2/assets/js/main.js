@@ -3,7 +3,7 @@ function changeAir() {
   //   --- output: air-value
   const wrapper = document.querySelector(".wrapper");
   const airValue = document.querySelector(".value-air");
-  // was NEUES!!!
+  // was NEUES!!! (.textContent)
   airValue.textContent = "Luftqualität: " + air;
   // airValue.innerHTML = air;
 
