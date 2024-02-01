@@ -1,10 +1,10 @@
 function pwCheck() {
-  getPassword = document.body.querySelector("#password").value;
+  const passwordLength = document.body.querySelector("#password").value.length;
   const textOutput = document.body.querySelector(".output");
-  const passwordLength = `${getPassword.length}`;
   console.log(passwordLength);
-  const SaveOrNot =
+  textOutput.textContent =
+    // const SaveOrNot =
     passwordLength < 8
-      ? (textOutput.textContent = "The password is too short")
-      : (textOutput.textContent = "Welcome to your Account");
+      ? "The password is too short"
+      : "Welcome to your Account";
 }

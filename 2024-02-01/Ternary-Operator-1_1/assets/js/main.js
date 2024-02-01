@@ -3,7 +3,7 @@
 // function adult(event) {
 //   event.preventDefault();
 //   const getAge = document.body.querySelector("#age").value;
-/
+
 //   const output = document.body.querySelector("form p");
 //   if (getAge >= 18) {
 
@@ -23,8 +23,5 @@ function adult(event) {
   const getAge = document.body.querySelector("#age").value;
   console.log(getAge);
   const output = document.body.querySelector("form p");
-  const adultOrNotOutput =
-    getAge >= 18
-      ? (output.innerHTML = "volljährig !")
-      : (output.innerHTML = "minderjährig !");
+  output.innerHTML = getAge >= 18 ? "volljährig !" : "minderjährig !";
 }

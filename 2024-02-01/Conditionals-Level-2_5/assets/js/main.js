@@ -1,7 +1,6 @@
-function check(bundesland) {
-  const inputBL = document.body.querySelector("#bundeslandInfo").value;
-  bundesland = inputBL;
-  //   console.log(bundesland);
+function check() {
+  const bundesland = document.body.querySelector("#bundeslandInfo").value;
+
   const outputBL = document.body.querySelector("#bundeslandInfoErgebnis");
 
   switch (bundesland) {

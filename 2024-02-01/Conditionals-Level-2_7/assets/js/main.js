@@ -1,6 +1,6 @@
 function showtxt() {
   const getValue = document.body.querySelector("#mylist").value;
-  console.log(getValue);
+
   const outputSize = document.body.querySelector("td");
   switch (getValue) {
     case "0":
