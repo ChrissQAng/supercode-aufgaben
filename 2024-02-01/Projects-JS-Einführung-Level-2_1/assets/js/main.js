@@ -4,5 +4,6 @@ function text() {
   const noText = document.body.querySelector(".no-message");
   showText.textContent = textInput;
   noText.textContent =
-    textInput.length != 0 ? "" : "Gib bitte eine Nachricht ein!";
+  textInput.length != 0 ? "" : "Gib bitte eine Nachricht ein!";
 }
+// showText.textContent = textInput.length === 0 ?
