@@ -56,9 +56,9 @@ function slice() {
   const outputSlice1 = document.body.querySelector(".output-slice1");
   const outputSlice2 = document.body.querySelector(".output-slice2");
 
-  // --- false input validation
+  // --- FALSE input validation (empty string)
   if (completeText === "" || sliceString === "") {
-    outputSlice1.textContent = "Gib in die Felder jeweils einen Text ein!";
+    alert("Gib in die Felder JEWEILS einen Text ein!");
     return;
   }
 
@@ -66,9 +66,9 @@ function slice() {
   const indexSliceStringStart = completeText.indexOf(sliceString);
   console.log(indexSliceStringStart);
 
+  // --- FALSE input validation (sliceString not in completeText included)
   if (indexSliceStringStart === -1) {
-    outputSlice1.textContent =
-      "Trennung ist NICHT in der ursprünglichen Zeichenkette enthalte!";
+    alert("Trennung ist NICHT in der ursprünglichen Zeichenkette enthalte!");
     return;
   }
 
