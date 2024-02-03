@@ -59,5 +59,6 @@ form input[type="text"] {
 }
 form input[type="button"] {
   font-size: 20px;
+  padding: 5px;
   margin-left: 20px;
 }
