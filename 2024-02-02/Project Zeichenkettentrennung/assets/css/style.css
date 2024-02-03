@@ -46,10 +46,18 @@ li {
   justify-content: center;
   gap: 60px;
 }
+#trennung {
+  margin-bottom: 30px;
+}
+#before,
+#after {
+  margin-left: 20px;
+}
 
 form input[type="text"] {
   font-size: 25px;
 }
 form input[type="button"] {
   font-size: 20px;
+  margin-left: 20px;
 }

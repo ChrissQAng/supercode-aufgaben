@@ -44,7 +44,7 @@
 //     console.log("after");
 //   }
 // }
-// ----------------------------------- ternary
+// ----------------------------------- ternary (with alerts)
 
 function slice() {
   // --- 3 inputs
@@ -56,9 +56,16 @@ function slice() {
   const outputSlice1 = document.body.querySelector(".output-slice1");
   const outputSlice2 = document.body.querySelector(".output-slice2");
 
-  // --- FALSE input validation (empty string)
+  // --- FALSE input validation (empty string or no radio button chosen)
   if (completeText === "" || sliceString === "") {
     alert("Gib in die Felder JEWEILS einen Text ein!");
+    return;
+  }
+  if (
+    beforeBtn === false &&
+    document.body.querySelector("#after").checked === false
+  ) {
+    alert("Wähle eine Trennungoption !");
     return;
   }
 
@@ -84,6 +91,8 @@ function slice() {
     indexSliceStringEnd,
     completeText.length
   );
+
+  // --- outputs
   outputSlice1.textContent = beforeBtn ? slice1Before : slice1After;
   outputSlice2.textContent = beforeBtn ? slice2Before : slice2After;
 }
