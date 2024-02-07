@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <form onsubmit="calculate(event)">
+      <h2>Kalorienrechner</h2>
+      <label for="height">Körpergröße in cm</label>
+      <input type="number" id="height" step="any" />
+      <label for="age">Alter</label>
+      <input type="number" id="age" />
+      <label for="weight">Gewicht in kg</label>
+      <input type="number" id="weight" />
+      <div>
+        <input
+          checked
+          type="radio"
+          name="gender"
+          id="female"
+          value="femaleGender"
+        />
+        <label for="female">Weiblich</label>
+        <input type="radio" name="gender" id="male" value="maleGender" />
+        <label for="male">Männlich</label>
+      </div>
+      <label for="bodystress">Körperliche Belastung</label>
+      <select name="bodystress" id="bodystress">
+        <option value="0.95">Schlafen</option>
+        <option value="1.2">Nur Sitzen oder Liegen</option>
+        <option value="1.5">
+          Sitzende Tätigkeit mit wenig körperl. Aktivitä
+        </option>
+        <option value="1.7">
+          Sitzende Tätigkeit mit zeitweilig körperl. Aktivität
+        </option>
+        <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+        <option value="2.2">
+          Körperl. anstrengende berufliche Arbeit (Developer)
+        </option>
+      </select>
+
+      <input type="submit" value="Submit" />
+      <p>Grundumsatz:</p>
+      <p class="grundumsatz"></p>
+      <p>Gesamtumsatz:</p>
+      <p class="gesamtumsatz"></p>
+    </form>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
