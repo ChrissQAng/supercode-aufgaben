@@ -14,7 +14,6 @@ let array = [
 // console.log(sortDopple(array));
 
 // mit einer Zwischenvariable (von mir!)
-
-const newArray = array.sort((a, b) => a - b);
-array.map((dopple) => dopple * 2);
+array.sort((a, b) => a - b);
+const newArray = array.map((dopple) => dopple * 2);
 console.log(newArray);
