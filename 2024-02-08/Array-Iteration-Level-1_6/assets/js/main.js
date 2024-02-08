@@ -5,8 +5,8 @@ let album = [
   "rooms.GIF",
   "DOGATBEACH.jpg",
 ];
-let array = album.map((items) => {
-  let element = items.toLowerCase();
+let array = album.map((item) => {
+  let element = item.toLowerCase();
   if (element.includes(".gif") || element.includes(".jpg")) {
     return element.slice(0, -4);
   } else {
