@@ -3,11 +3,18 @@ let array = [
   74, 97, 28, 99, 91, 27, 73, 12, 92, 6, 27, 71, 26, 15, 78,
 ];
 
-const sortDopple = (param) => {
-  const doppleArray = param.map((x) => x * 2);
+// ---- in einer Funktion, wie in der Aufgabe (nicht von mir!)
 
-  doppleArray.sort((a, b) => a - b);
-  return doppleArray;
-};
+// const sortDopple = (param) => {
+//   const doppleArray = param.map((x) => x * 2);
 
-console.log(sortDopple(array));
+//   doppleArray.sort((a, b) => a - b);
+//   return doppleArray;
+// };
+// console.log(sortDopple(array));
+
+// mit einer Zwischenvariable (von mir!)
+
+const newArray = array.sort((a, b) => a - b);
+array.map((dopple) => dopple * 2);
+console.log(newArray);
