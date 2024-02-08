@@ -44,29 +44,5 @@ const heros = [
 
 console.table(heros);
 
-// let filterMovies = movies.filter((film) => {
-//   return film.includes("Pulp");
-// });
-
-const filterHeroes = heros.filter(
-  (oneHero) => oneHero !== undefined && oneHero == !null
-);
-console.log(filterHeroes);
-
-const heros = [
-  "Superman",
-  "Batman",
-  undefined,
-  "Wonder Woman",
-  "Spider-Man",
-  "Black Widow",
-  "Iron Man",
-  "Thor",
-  "Catwoman",
-  null,
-];
-console.log(heros);
-const myHeros = heros.filter(
-  (element) => element !== undefined && element !== null
-);
-console.log(myHeros);
+const herosFilter = heros.filter((hero) => hero);
+console.log(herosFilter);
