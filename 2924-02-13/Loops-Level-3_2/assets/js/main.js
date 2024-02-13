@@ -6,7 +6,7 @@ for (let i = 0; i < numArr.length; i++) {
     if (numArr[i] % j === 0) {
       trueResult.innerHTML += `<p>${
         numArr[i]
-      } is devisable by ${j}. The result is ${numArr[i] / j}`;
+      } is divisable by ${j}. The result is ${numArr[i] / j}`;
     }
   }
 }
