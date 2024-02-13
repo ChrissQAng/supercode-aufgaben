@@ -5,10 +5,15 @@ const output = document.querySelector(".output-loop");
 
 const loopFunction = () => {
   const input = Number(document.querySelector("#number").value);
+  if (input === 0) {
+    output.innerHTML = `Mit 0 kann ich nichts anfangen!`;
+    return;
+  }
   let oString = [];
-
-  for (i = 0; i < input; i++) {
-    oString.push("o");
+  if (input % 2 === 0) {
+    for (i = 0; i < input; i++) {
+      oString.push("o");
+    }
   }
   const string = oString.join("");
   output.innerHTML = "<p>L" + string + "p</p>";
