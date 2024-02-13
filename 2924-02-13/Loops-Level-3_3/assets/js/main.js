@@ -1,5 +1,4 @@
-// --- get input number
-
+// --- output
 const output = document.querySelector(".output-loop");
 // --- function
 
@@ -19,7 +18,6 @@ const loopFunction = () => {
   } else {
     console.log("ungerade");
     for (i = 0; i < input; i++) {
-      // oString.push("o");
       if (i % 2 === 0) {
         oString.push("o");
       } else {
