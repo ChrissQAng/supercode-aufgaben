@@ -1,4 +1,4 @@
-// --- get input number
+// --- output
 
 const output = document.querySelector(".output-loop");
 // --- function
