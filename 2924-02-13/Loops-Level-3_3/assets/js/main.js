@@ -13,8 +13,20 @@ const loopFunction = () => {
   if (input % 2 === 0) {
     for (i = 0; i < input; i++) {
       oString.push("o");
+      const string = oString.join("");
+      output.innerHTML = "<p>L" + string + "p</p>";
+    }
+  } else {
+    console.log("ungerade");
+    for (i = 0; i < input; i++) {
+      // oString.push("o");
+      if (i % 2 === 0) {
+        oString.push("o");
+      } else {
+        oString.push("O");
+      }
+      const string = oString.join("");
+      output.innerHTML = "<p>L" + string + "p</p>";
     }
   }
-  const string = oString.join("");
-  output.innerHTML = "<p>L" + string + "p</p>";
 };
