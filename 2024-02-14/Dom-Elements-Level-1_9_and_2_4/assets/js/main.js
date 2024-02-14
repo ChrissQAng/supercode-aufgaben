@@ -12,9 +12,6 @@ const removeColor = document.querySelector("#button");
 
 removeColor.addEventListener("click", (event) => {
   event.preventDefault();
-  // let color = selectMenu.value.toLowerCase().replaceAll(" ", "");
-  document.body.style.backgroundColor = selectMenu.value
-    .toLowerCase()
-    .replaceAll(" ", "");
-  // selectMenu.;
+
+  document.body.style.backgroundColor = selectMenu.value.replaceAll(" ", "");
 });
