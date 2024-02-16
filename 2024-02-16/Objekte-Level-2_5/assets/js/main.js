@@ -48,17 +48,37 @@ const singers = [
     genre: "Progressive rock / Psychedelic rock",
   },
 ];
+// --- generate table
 
 const output = document.querySelector("#table-container");
-
 output.innerHTML = `<h3>Name</h3>
   <h3>Country</h3>
   <h3>Period Active</h3>
   <h3>Genre</h3>`;
 
-singers.forEach((item) => {
-  output.innerHTML += `<p>${item.name}</p>
+//   --- output Funktion
+const outputArray = (arrayOfObjects) => {
+  arrayOfObjects.forEach((item) => {
+    output.innerHTML += `<p>${item.name}</p>
   <p>${item.country}</p>
   <p>${item.period_active.start} - ${item.period_active.end}</p>
   <p>${item.genre}</p>`;
+  });
+};
+outputArray(singers);
+
+// --- button and input value
+const buttonClick = document.querySelector("button");
+
+buttonClick.addEventListener("click", () => {
+  const inputArtist = document.querySelector("#searchInput").value;
+
+  console.log(inputArtist);
+
+  let searchedSingers = singers.filter((item) => {
+    return item.name.toLowerCase().includes(inputArtist.toLowerCase());
+  });
+  console.log(searchedSingers);
+  output.innerHTML = "";
+  outputArray(searchedSingers);
 });

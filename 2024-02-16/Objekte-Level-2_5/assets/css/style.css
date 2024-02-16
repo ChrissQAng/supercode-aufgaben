@@ -36,7 +36,6 @@ a,
 li {
   font-size: clamp(2rem, 2vw, 2rem);
 }
-
 #table-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
