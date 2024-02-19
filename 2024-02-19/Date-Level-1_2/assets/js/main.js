@@ -52,11 +52,14 @@ const outputTime = () => {
       weekday: "short",
     }
   );
-  document.querySelector(".hour").textContent = currentTime.getHours() - 12;
-  document.querySelector(".minute").textContent = currentTime.getMinutes();
-  document.querySelector(".second").textContent = currentTime.getSeconds();
+  document.querySelector(".hour").textContent =
+    ":  " + (currentTime.getHours() - 12);
+  document.querySelector(".minute").textContent =
+    ":  " + currentTime.getMinutes();
+  document.querySelector(".second").textContent =
+    ":  " + currentTime.getSeconds();
   document.querySelector(".noon").textContent =
-    currentTime.getSeconds() + 12 >= 12 ? "PM" : "AM";
+    ":  " + (currentTime.getSeconds() + 12 >= 12 ? "PM" : "AM");
 };
 
 setInterval(outputTime, 1000);
