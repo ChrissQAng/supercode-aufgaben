@@ -73,12 +73,11 @@ const buttonClick = document.querySelector("button");
 buttonClick.addEventListener("click", () => {
   const inputArtist = document.querySelector("#searchInput").value;
 
-  console.log(inputArtist);
-
   let searchedSingers = singers.filter((item) => {
     return item.name.toLowerCase().includes(inputArtist.toLowerCase());
   });
-  console.log(searchedSingers);
+
   output.innerHTML = "";
+
   outputArray(searchedSingers);
 });
