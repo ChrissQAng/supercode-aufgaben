@@ -1,3 +1,7 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +12,9 @@ img {
 }
 html {
   font-size: 62.5%;
+  background-color: black;
+  color: white;
+  font-family: ubuntu, Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -19,29 +26,19 @@ h2 {
 h3 {
   font-size: clamp(2.5rem, 3.3vw, 4rem);
 }
-h4 {
-  font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+.clock {
+  margin-top: 200px;
+  margin-left: 200px;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  height: 200px;
+  border: 15px solid white;
 }
-h5 {
-  font-size: clamp(2.5rem, 3vw, 3.2rem);
-}
-h6 {
-  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
-}
-p,
-label {
-  font-size: clamp(2rem, 2vw, 2rem);
-}
-a,
-li {
-  font-size: clamp(2rem, 2vw, 2rem);
-}
-.wrapper {
-  background-color: black;
-  color: white;
-}
-section {
-  margin-top: 300px;
-  width: 30vw;
-  border: 5px solid white;
+.clock p {
+  font-size: 30px;
 }
