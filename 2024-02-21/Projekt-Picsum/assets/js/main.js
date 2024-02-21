@@ -33,6 +33,7 @@ fetch("https://picsum.photos/v2/list")
       //   --- set event listener to button and log id
       button.addEventListener("click", () => {
         console.log(`Die id zu dieeser Kachel ist ${singleObject.id}`);
+        window.open(singleObject.url);
       });
     });
   })
