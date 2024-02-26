@@ -5,8 +5,13 @@
 const searchFunction = () => {
   document.querySelector(".tiles-output").innerHTML = "";
   const searchInput = document.querySelector("#search").value;
+  //   --- if searchInput = ""
+  //   if (searchInput === "") {
+  //     alert("Gebe etwas in das Suchfeld ein");
+  //   }
   if (searchInput === "") {
-    alert("Gebe etwas in das Suchfeld ein");
+    document.querySelector("#search").placeholder = "Search term not found";
+    return;
   }
   console.log(searchInput);
   // ---  language
@@ -19,9 +24,9 @@ const searchFunction = () => {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      //   console.log(data);
       data.articles.forEach((singleObject) => {
-        // console.log(singleObject);
+        console.log(singleObject);
         // --- create div singleTile
         let singleTile = document.createElement("div");
         // --- delete tiles
