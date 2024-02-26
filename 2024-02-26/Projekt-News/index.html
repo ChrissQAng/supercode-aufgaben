@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <h1>NEWS APP</h1>
-    <div class="input-box">
-      <input id="search" type="text" placeholder="Suchbegriff" />
-      <select name="language-selection" id="language">
-        <option value="ar">arabisch</option>
-        <option selected value="de">deutsch</option>
-        <option value="en">english</option>
-        <option value="es">spanisch</option>
-        <option value="fr">französisch</option>
-        <option value="he">häbraisch</option>
-        <option value="it">italienisch</option>
-        <option value="nl">holländisch</option>
-        <option value="po">portugisch</option>
-        <option value="ru">russisch</option>
-        <option value="sv">schwedisch</option>
-      </select>
-      <select id="sort-option">
-        <option value="relevancy">popularität</option>
-        <option value="popularity">relevanz</option>
-        <option value="publishedAt">publiziert</option>
-      </select>
-      <input type="button" onclick="searchFunction()" value="Suchen" />
+    <div class="fixed">
+      <h1>NEWS APP</h1>
+      <div class="input-box">
+        <input id="search" type="text" placeholder="Suchbegriff" />
+        <select name="language-selection" id="language">
+          <option value="ar">arabisch</option>
+          <option selected value="de">deutsch</option>
+          <option value="en">english</option>
+          <option value="es">spanisch</option>
+          <option value="fr">französisch</option>
+          <option value="he">häbraisch</option>
+          <option value="it">italienisch</option>
+          <option value="nl">holländisch</option>
+          <option value="po">portugisch</option>
+          <option value="ru">russisch</option>
+          <option value="sv">schwedisch</option>
+        </select>
+        <select id="sort-option">
+          <option value="relevancy">popularität</option>
+          <option value="popularity">relevanz</option>
+          <option value="publishedAt">publiziert</option>
+        </select>
+        <input type="button" onclick="searchFunction()" value="Suchen" />
+      </div>
     </div>
     <section class="tiles-output"></section>
     <script src="./assets/js/main.js"></script>
