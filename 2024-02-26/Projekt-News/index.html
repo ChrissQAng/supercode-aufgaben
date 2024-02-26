@@ -11,6 +11,24 @@
     <div class="input-box">
       <p>Suchbegriff:</p>
       <input id="search" type="text" placeholder="Suchbegriff" />
+      <select name="language-selection" id="language">
+        <option value="ar">arabisch</option>
+        <option value="de">deutsch</option>
+        <option value="en">english</option>
+        <option value="es">spanisch</option>
+        <option value="fr">französisch</option>
+        <option value="he">häbraisch</option>
+        <option value="it">italienisch</option>
+        <option value="nl">holländisch</option>
+        <option value="po">portugisch</option>
+        <option value="ru">russisch</option>
+        <option value="sv">schwedisch</option>
+      </select>
+      <select id="sort-option">
+        <option value="relevancy">popularität</option>
+        <option value="popularity">relevanz</option>
+        <option value="publishedAt">publiziert</option>
+      </select>
       <input type="button" onclick="searchFunction()" value="Suchen" />
     </div>
     <section class="tiles-output"></section>

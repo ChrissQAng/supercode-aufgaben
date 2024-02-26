@@ -5,8 +5,13 @@
 const searchFunction = () => {
   const searchInput = document.querySelector("#search").value;
   console.log(searchInput);
+  // ---  language
+  let language = document.querySelector("#language").value;
+  // --- sort
+  let sort = document.querySelector("#sort-option").value;
+
   fetch(
-    `http://newsapi.org/v2/everything?q=${searchInput}&from=2024-01-26&sortBy=popularity&language=de&apiKey=5a1027bfdcf04470a4aee6f8dafe5578`
+    `http://newsapi.org/v2/everything?q=${searchInput}&from=2024-01-26&sortBy=${sort}&language=${language}&apiKey=5a1027bfdcf04470a4aee6f8dafe5578`
   )
     .then((res) => res.json())
     .then((data) => {
@@ -14,6 +19,8 @@ const searchFunction = () => {
       data.articles.forEach((singleObject) => {
         // console.log(singleObject);
         let singleTile = document.createElement("div");
+        // --- delete tiles
+        singleTile.innerHTML = "";
         // --- headline
         let title = document.createElement("h5");
         title.textContent = singleObject.title;
