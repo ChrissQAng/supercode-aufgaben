@@ -5,12 +5,10 @@
 const searchFunction = () => {
   document.querySelector(".tiles-output").innerHTML = "";
   const searchInput = document.querySelector("#search").value;
-  //   --- if searchInput = ""
-  //   if (searchInput === "") {
-  //     alert("Gebe etwas in das Suchfeld ein");
-  //   }
+
   if (searchInput === "") {
-    document.querySelector("#search").placeholder = "Search term not found";
+    document.querySelector("#search").placeholder =
+      "Bitte Suchbegriff eingeben";
     return;
   }
   console.log(searchInput);
