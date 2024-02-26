@@ -3,7 +3,11 @@
 // ---input-value
 
 const searchFunction = () => {
+  document.querySelector(".tiles-output").innerHTML = "";
   const searchInput = document.querySelector("#search").value;
+  if (searchInput === "") {
+    alert("Gebe etwas in das Suchfeld ein");
+  }
   console.log(searchInput);
   // ---  language
   let language = document.querySelector("#language").value;
@@ -18,6 +22,7 @@ const searchFunction = () => {
       console.log(data);
       data.articles.forEach((singleObject) => {
         // console.log(singleObject);
+        // --- create div singleTile
         let singleTile = document.createElement("div");
         // --- delete tiles
         singleTile.innerHTML = "";
