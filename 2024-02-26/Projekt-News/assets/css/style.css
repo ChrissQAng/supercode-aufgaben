@@ -74,3 +74,6 @@ li {
   align-items: center;
   gap: 15px;
 }
+.tiles-output button {
+  font-size: 25px;
+}
