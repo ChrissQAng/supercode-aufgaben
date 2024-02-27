@@ -1,9 +1,10 @@
 import "./Icon.css";
+import burger from "/src/assets/burger.png";
 
 const Icon = () => {
   return (
     <div className="icon">
-      <img src="./assets/burger.png" alt="burger" />
+      <img src={burger} alt="burger" />
     </div>
   );
 };
