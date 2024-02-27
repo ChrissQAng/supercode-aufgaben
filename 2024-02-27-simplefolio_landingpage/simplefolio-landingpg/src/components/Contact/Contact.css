@@ -1,0 +1,11 @@
+.contact {
+  margin-top: 100px;
+}
+.contact button {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  background-color: #23283e;
+  border: 1px solid #90a0d9;
+  color: #90a0d9;
+  padding: 10px 20px;
+}
