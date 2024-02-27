@@ -1,0 +1,16 @@
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .js {
+  color: #90a0d9;
+  font-size: 30px;
+  font-family: poppinsBold, Arial, Helvetica, sans-serif;
+}
+
+header .links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}

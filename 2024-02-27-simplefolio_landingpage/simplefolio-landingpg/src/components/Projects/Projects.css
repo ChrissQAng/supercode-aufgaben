@@ -1,0 +1,21 @@
+.projects {
+  margin-top: 100px;
+}
+
+.projects h2 {
+  font-family: poppinsBold, Arial, Helvetica, sans-serif;
+}
+.projects .container-projects {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.projects .tile-projects {
+  background-color: #2a2f4c;
+}
+.tile-projects p:first-of-type {
+  color: #90a0d9;
+}
+.tile-projects p:nth-of-type(2) {
+  font-family: poppinsBold, Arial, Helvetica, sans-serif;
+}

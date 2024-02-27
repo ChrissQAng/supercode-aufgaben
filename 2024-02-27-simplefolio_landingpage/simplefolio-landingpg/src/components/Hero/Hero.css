@@ -1,0 +1,14 @@
+.hero span {
+  color: #90a0d9;
+}
+.hero button {
+  margin-top: 20px;
+  background-color: #23283e;
+  border: 1px solid #90a0d9;
+  color: #90a0d9;
+  padding: 10px 20px;
+}
+.hero h1,
+.hero h3 {
+  font-family: poppinsBold, Arial, Helvetica, sans-serif;
+}

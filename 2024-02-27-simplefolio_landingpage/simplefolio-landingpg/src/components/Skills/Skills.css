@@ -1,0 +1,19 @@
+.skills {
+  margin-top: 100px;
+}
+.skills h2 {
+  font-family: poppinsBold, Arial, Helvetica, sans-serif;
+}
+.skills .container-skills {
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skills .container-skills p {
+  padding: 10px;
+  background-color: #2a2f4c;
+  color: #90a0d9;
+}
