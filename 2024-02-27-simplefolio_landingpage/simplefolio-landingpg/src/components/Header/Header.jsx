@@ -1,3 +1,4 @@
+import Icon from "../Icon/Icon";
 import "./Header.css";
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
           <p>projects</p>
           <p>skills</p>
           <p>contact</p>
-          <p>ic</p>
+          <p>
+            <Icon />
+          </p>
         </div>
       </nav>
     </header>
