@@ -1,11 +1,21 @@
 .tile {
   background-color: black;
   text-align: center;
-  width: 12vw;
+  width: 13vw;
+  padding: 5px;
 }
 .tile p {
   color: white;
 }
-.tile p:last-of-type {
+.tile .css-title {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.tile .css-genre {
   font-weight: 200;
+  font-size: 14px;
+}
+.tile .wrapper-genre {
+  margin-top: 30px;
 }
