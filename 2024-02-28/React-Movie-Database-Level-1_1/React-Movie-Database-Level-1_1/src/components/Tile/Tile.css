@@ -1,0 +1,11 @@
+.tile {
+  background-color: black;
+  text-align: center;
+  width: 12vw;
+}
+.tile p {
+  color: white;
+}
+.tile p:last-of-type {
+  font-weight: 200;
+}
