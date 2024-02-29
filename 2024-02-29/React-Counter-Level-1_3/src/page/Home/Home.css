@@ -1,0 +1,16 @@
+.wrapper {
+  border: 1px solid black;
+  margin: 5vw auto;
+  width: 20vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.three-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
