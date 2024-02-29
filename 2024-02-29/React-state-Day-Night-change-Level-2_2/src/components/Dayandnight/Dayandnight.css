@@ -1,0 +1,32 @@
+.day {
+  margin-top: 20vw;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: center;
+}
+.day h1 {
+  font-size: 50px;
+}
+.day button {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.night {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.night h1 {
+  font-size: 50px;
+}
+.night button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
