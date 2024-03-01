@@ -2,17 +2,23 @@ import { useState } from "react";
 import "./Banana.css";
 const Banana = () => {
   const [account, setAccount] = useState(0);
-  const [bookingamount, setBookingamount] = useState(0);
+  const [bookingamount, setBookingamount] = useState("");
+  const [warning, setWarning] = useState("");
+  let accountMinus;
 
   //   --- Einzahlung
   const add = () => {
+    setWarning("");
     setAccount(Number(account + bookingamount));
     setBookingamount("");
   };
   //   --- Auszahlung
   const substract = () => {
+    setWarning("");
     bookingamount > account
-      ? window.alert("minus")
+      ? //   ? window.alert("minus")
+
+        setWarning("Minus")
       : setAccount(Number(account - bookingamount));
 
     setBookingamount("");
@@ -28,7 +34,8 @@ const Banana = () => {
           src="../../../public/kontostand02.png"
           alt=""
         />
-        <p>{account} €</p>
+        <p> {account} €</p>
+        <p> {warning}</p>
       </div>
       <input
         onChange={(event) => setBookingamount(Number(event.target.value))}

@@ -1,3 +1,7 @@
+:root {
+  background-color: antiquewhite;
+}
+
 @font-face {
   font-family: barbie;
   src: url(../../../public/Classic_Dolly.ttf);
@@ -35,6 +39,7 @@
 }
 .banana input {
   font-size: 35px;
+  border: 2px dotted red;
   border-radius: 20px;
   text-align: center;
   background-color: pink;
@@ -46,7 +51,11 @@
   gap: 20px;
 }
 .banana button {
-  background-color: rgb(221, 173, 181);
+  background-color: pink;
   padding: 20px 50px;
+  border: 3px solid red;
   border-radius: 20px;
+  font-family: barbie, Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 20px;
 }
