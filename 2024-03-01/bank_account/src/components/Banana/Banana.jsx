@@ -4,7 +4,6 @@ const Banana = () => {
   const [account, setAccount] = useState(0);
   const [bookingamount, setBookingamount] = useState("");
   const [warning, setWarning] = useState("");
-  let accountMinus;
 
   //   --- Einzahlung
   const add = () => {
@@ -15,11 +14,10 @@ const Banana = () => {
   //   --- Auszahlung
   const substract = () => {
     setWarning("");
-    bookingamount > account
-      ? //   ? window.alert("minus")
+    // bookingamount > account
 
-        setWarning("Minus")
-      : setAccount(Number(account - bookingamount));
+    if (bookingamount > account) setWarning("Betrag zu hoch!");
+    else setAccount(Number(account - bookingamount));
 
     setBookingamount("");
   };
