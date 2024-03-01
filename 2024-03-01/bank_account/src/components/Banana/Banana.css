@@ -1,0 +1,52 @@
+@font-face {
+  font-family: barbie;
+  src: url(../../../public/Classic_Dolly.ttf);
+}
+
+.banana {
+  margin: 2vw auto;
+  background-color: pink;
+  width: 35vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border: 5px double rgb(212, 157, 166);
+  border-radius: 20px;
+  font-family: barbie, Arial, Helvetica, sans-serif;
+}
+.banana img {
+  transform: scale(0.5);
+}
+.banana .kontostand-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banana .kontostand-wrapper p {
+  margin-top: -20px;
+  font-size: 50px;
+}
+.banana .kontostand-img {
+  transform: scale(0.3);
+}
+.banana input {
+  font-size: 35px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: pink;
+}
+.banana .buttons {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  display: flex;
+  gap: 20px;
+}
+.banana button {
+  background-color: rgb(221, 173, 181);
+  padding: 20px 50px;
+  border-radius: 20px;
+}
