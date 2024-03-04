@@ -6,7 +6,7 @@ const Article = (props) => {
     <article>
       <img src={props.content.img_url} alt="" />
       <h2>{props.content.title}</h2>
-      <Link to="/detail" detailcontent={props.content}>
+      <Link to="/detail" state={{ from: props.content }}>
         Read more
       </Link>
     </article>
