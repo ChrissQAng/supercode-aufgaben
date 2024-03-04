@@ -1,0 +1,18 @@
+@font-face {
+  font-family: roboto;
+  src: url(/public/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+:root {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+
+  color: black;
+  font-weight: 600;
+  color: #219653;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: 5px solid #6fcf97;
+  border-radius: 15px;
+}
