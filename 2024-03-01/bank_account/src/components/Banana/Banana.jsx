@@ -14,7 +14,6 @@ const Banana = () => {
   //   --- Auszahlung
   const substract = () => {
     setWarning("");
-    // bookingamount > account
 
     if (bookingamount > account) setWarning("Betrag zu hoch!");
     else setAccount(Number(account - bookingamount));
