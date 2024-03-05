@@ -33,20 +33,20 @@ const DetailPage = () => {
   // >>> das Objekt mit Turnary ins html schreiben
 
   return (
-    <>
+    <div className="detail-wrapper">
       <Link to="/">Back to Home</Link>
       {filteredData ? (
         <div className="detail">
-          <p>{filteredData.category}</p>
+          <p className="category">{filteredData.category}</p>
           <img src={filteredData.image} alt={filteredData.title} />
-          <p>{filteredData.title}</p>
+          <h1>{filteredData.title}</h1>
           <p>{filteredData.description}</p>
-          <p>{filteredData.price}</p>
+          <p className="price">{filteredData.price} €</p>
         </div>
       ) : (
         <p>Laden ...</p>
       )}
-    </>
+    </div>
   );
 };
 

@@ -13,12 +13,12 @@ const Shop = () => {
   // console.log(dataArray);
 
   return (
-    <>
+    <div className="wrapper">
       <h1>Welcome</h1>
       <div className="shop-items">
         {dataArray ? (
           dataArray.map((item, index) => (
-            <div key={index}>
+            <div className="tile" key={index}>
               <img src={item.image} alt="" />
               <h2>{item.title}</h2>
               <p>{item.price} €</p>
@@ -29,7 +29,7 @@ const Shop = () => {
           <p>Loading...</p>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

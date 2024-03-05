@@ -3,3 +3,20 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
 }
+.wrapper h1 {
+  text-align: center;
+  font-size: 55px;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 1vw;
+  border-radius: 10px;
+}
+.tile img {
+  width: 300px;
+  border-radius: 10px;
+}
