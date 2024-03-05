@@ -6,6 +6,13 @@
   justify-content: center;
   align-items: center;
   gap: 5vw;
+  padding: 3vw;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .detail p {
   color: white;
@@ -18,10 +25,10 @@
   text-align: center;
 }
 .detail .category {
-  text-align: end;
+  align-self: flex-end;
 }
 .detail .price {
-  text-align: right;
+  align-self: flex-end;
   color: rgb(208, 208, 179);
   font-size: 55px;
 }
