@@ -1,0 +1,11 @@
+@font-face {
+  font-family: roboto;
+  src: url(../public/RobotoFlex-VariableFont.ttf);
+}
+:root {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+}

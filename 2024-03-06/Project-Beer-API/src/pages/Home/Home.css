@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  width: 300px;
+}
+
+.home img {
+  width: 300px;
+}
+.home a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.button {
+  height: 50px;
+  background-color: #ffca41;
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home p {
+  font-weight: 500;
+}

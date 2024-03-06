@@ -1,0 +1,14 @@
+.nav-bar {
+  height: 70px;
+  background-color: #ffca41;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar a {
+  padding: 5px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}

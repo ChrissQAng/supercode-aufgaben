@@ -6,8 +6,6 @@ import Shop from "./pages/Shop/Shop";
 import DetailPage from "./pages/DetailPage/DetailPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Routes>
