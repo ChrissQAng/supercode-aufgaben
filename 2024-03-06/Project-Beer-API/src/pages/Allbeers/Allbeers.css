@@ -1,5 +1,6 @@
 .allbeers {
   width: 300px;
+  margin-bottom: 68px;
 }
 .allbeers img {
   width: 70px;
@@ -23,6 +24,7 @@
   font-weight: 500;
 }
 .allbeers h2 {
+  margin-top: -26px;
   color: #ffca41;
   font-size: 18px;
   font-weight: 900;

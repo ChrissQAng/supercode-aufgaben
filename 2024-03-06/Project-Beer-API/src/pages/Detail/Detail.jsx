@@ -22,7 +22,7 @@ const Detail = () => {
     setFilterData(find); // wir schreiben es in unsere state
   }, [data]);
   return (
-    <>
+    <div className="detail-wrapper">
       {filterdData ? (
         <div className="detail">
           <img src={filterdData.image_url} alt={filterdData.name} />
@@ -32,11 +32,11 @@ const Detail = () => {
             <div className="date-level">
               <section>
                 <p>First brewed:</p>
-                <p>Attenuation Level:</p>
+                <p className="contract">Attenuation Level:</p>
               </section>
               <section>
                 <p>{filterdData.first_brewed}</p>
-                <p>{filterdData.attenuation_level}</p>
+                <p className="contract">{filterdData.attenuation_level}</p>
               </section>
             </div>
             <p>{filterdData.description}</p>
@@ -62,7 +62,7 @@ const Detail = () => {
         <p>Laden...</p>
       )}
       <Navbar />
-    </>
+    </div>
   );
 };
 
