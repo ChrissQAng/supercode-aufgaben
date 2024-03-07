@@ -1,0 +1,74 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+/* --- lorum */
+.lorum {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+.lorum img {
+  width: 50vw;
+  height: 50vw;
+}
+/* --- about */
+
+.about {
+  margin-top: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.about img {
+  width: 15vw;
+}
+.about1-img {
+  margin-bottom: 1vw;
+  margin-right: 1vw;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  width: 40vw;
+}
+.about-image-wrapper {
+  width: 40vw;
+}
+.about p {
+  width: 20vw;
+  line-height: 2rem;
+  font-weight: 300;
+}
+/* --- main */
+.main {
+  margin-top: 8vw;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3vw;
+}
+.main-numbers {
+  font-size: 200px;
+  font-weight: 900;
+  color: #f2f2f2;
+}
+.main-text {
+  width: 10vw;
+  line-height: 2rem;
+  font-weight: 300;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}

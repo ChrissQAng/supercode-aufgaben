@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: #333333;
+  padding: 5px 1vw;
+}
+nav a:hover {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+
+header svg {
+  cursor: pointer;
+}
+.dark {
+  background-color: #333333;
+}
+.dark a {
+  color: #ffffff;
+}
+.logo-svg {
+  fill: #333333;
+}
+.dark .logo-svg {
+  fill: #ffffff;
+}
