@@ -12,7 +12,7 @@ const Home = () => {
               <h3>Lorum</h3>
             </div>
             <img
-              src="../../../public/img/white_building.jpeg"
+              src="../../../img/white_building.jpeg"
               alt="big white building"
             />
           </section>
@@ -21,12 +21,12 @@ const Home = () => {
               <div>
                 <img
                   className="about1-img"
-                  src="../../../public/img/about1.jpeg"
+                  src="../../../img/about1.jpeg"
                   alt="building"
                 />
-                <img src="../../../public/img/about3.jpeg" alt="building" />
+                <img src="../../../img/about3.jpeg" alt="building" />
               </div>
-              <img src="../../../public/img/about2.jpeg" alt="building" />
+              <img src="../../../img/about2.jpeg" alt="building" />
             </div>
             <div className="about-text">
               <h2>About</h2>

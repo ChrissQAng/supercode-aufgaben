@@ -1,6 +1,6 @@
 @font-face {
   font-family: roboto;
-  src: url(../public/fonts/robotofont.ttf);
+  src: url(../fonts/robotofont.ttf);
 }
 :root {
   font-family: roboto;

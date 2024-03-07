@@ -24,7 +24,7 @@ const Navbar = () => {
           <NavLink to="/">CERTIFICATION</NavLink>
           <NavLink to="/">CONTACTS</NavLink>
         </nav>
-        <div onClick={themeToggle}>{!theme ? <Dark /> : <Sun />}</div>
+        <div onClick={themeToggle}>{theme ? <Sun /> : <Dark />}</div>
       </header>
     </>
   );
