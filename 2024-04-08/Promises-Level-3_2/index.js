@@ -6,10 +6,12 @@ const wait = (num) => {
   }, num);
 };
 
-const randNum = Math.floor(Math.random() * 1000) + 1;
+const randNum1 = Math.floor(Math.random() * 1000) + 1;
+const randNum2 = Math.floor(Math.random() * 1000) + 1;
+const randNum3 = Math.floor(Math.random() * 1000) + 1;
 
-wait(randNum).then((num) => console.log(num));
+// wait(randNum).then((num) => console.log(num));
 
-Promise.all([wait(randNum), wait(randNum), wait(randNum)]).then((numArr) =>
+Promise.all([wait(randNum1), wait(randNum2), wait(randNum3)]).then((numArr) =>
   console.log(numArr)
 );

@@ -14,3 +14,5 @@ const otherFunc = (number) => {
     .catch((number) => console.log("an error occured"));
 };
 otherFunc(2);
+
+// funktioniert NICHT!
