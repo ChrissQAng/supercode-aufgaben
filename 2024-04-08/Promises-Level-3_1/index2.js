@@ -7,12 +7,10 @@ const squareFunc = (number) => {
 };
 const otherFunc = (number) => {
   return squareFunc(number)
-    .then((number) => console.log(number))
-    .then((number) => console.log(number))
-    .then((number) => console.log(number))
+    .then((result) => squareFunc(result))
+    .then((result) => squareFunc(result))
+    .then((result) => squareFunc(result))
 
     .catch((number) => console.log("an error occured"));
 };
-otherFunc(2);
-
-// funktioniert NICHT!
+otherFunc(2).then((result) => console.log(result));
