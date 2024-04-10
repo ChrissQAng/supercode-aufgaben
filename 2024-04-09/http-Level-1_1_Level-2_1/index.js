@@ -47,26 +47,6 @@ const server = http.createServer((request, response) => {
         console.log(err);
         response.end("Internal Server Error!");
       });
-  } else if (request.method === "GET" && request.url === "/stylescss") {
-    readFile("./css/styles.css")
-      .then((dataBuffer) => {
-        response.write(dataBuffer);
-        response.end();
-      })
-      .catch((err) => {
-        console.log(err);
-        response.end("Internal Server Error!");
-      });
-  } else if (request.method === "GET" && request.url === "/images/forest.jpg") {
-    readFile("./images/forest.jpg")
-      .then((dataBuffer) => {
-        response.write(dataBuffer);
-        response.end();
-      })
-      .catch((err) => {
-        console.log(err);
-        response.end("Internal Server Error!");
-      });
   } else {
     readFile("./pages/error.html")
       .then((dataBuffer) => {
