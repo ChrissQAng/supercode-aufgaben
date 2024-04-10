@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: nunito;
+  src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+* {
+  font-family: nunito, Arial, Helvetica, sans-serif;
+}
+/* nav-bar */
+
+nav {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  margin-right: 9.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.woodies {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #222222a9;
+}
+nav a:first-of-type {
+  color: #daa520;
+}
+.button {
+  border: 1px solid #3e3f43;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+/* home */
+
+.home {
+  margin-top: 18.75rem;
+  margin-left: 10vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.second-headline {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 2.25rem;
+  color: #3e3f43;
+  font-weight: 400;
+}
+h3 span {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+.button-orange {
+  background-color: #daa520;
+  color: white;
+  border: none;
+}

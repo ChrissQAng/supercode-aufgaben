@@ -1,5 +1,10 @@
 const http = require("http");
 const { readFile } = require("./filesystem.js");
+const fs = require("fs");
+
+// load error-page first
+
+const errorPage = fs.readFileSync("./assets/error.html");
 
 // routing
 
@@ -10,15 +15,21 @@ const server = http.createServer((request, response) => {
   }
 
   const path = "./assets" + (request.url === "/" ? "/home.html" : request.url);
-  console.log(path);
+
   readFile(path)
     .then((dataBuffer) => {
       response.write(dataBuffer);
       response.end();
     })
     .catch((err) => {
-      console.log(err);
-      response.end("Internal Server Error!");
+      const FILE_NOT_FOUND = "ENOENT";
+      if (err.code === FILE_NOT_FOUND) {
+        response.writeHead(404);
+      } else {
+        console.log(err);
+        response.writeHead(500);
+      }
+      response.end(errorPage);
     });
 
   // if (
