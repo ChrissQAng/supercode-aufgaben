@@ -1,0 +1,46 @@
+@font-face {
+  font-family: playfair;
+  src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: antiquewhite;
+}
+html {
+  font-family: playfair, Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+
+.nav-bar {
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-size: 3.125rem;
+  margin-right: 18.75rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* home */
+
+.home {
+  padding: 3vw;
+}
+.home img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
