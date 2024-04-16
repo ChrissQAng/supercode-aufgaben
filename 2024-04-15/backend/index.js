@@ -51,7 +51,7 @@ app.post("/api/v1/todos", (req, res) => {
     task: req.body.task,
     check: req.body.check,
   };
-  console.log(req);
+  console.log(newTodo);
   readToDos()
     .then((toDos) => [...toDos, newTodo])
     .then((toDoswithNew) => writeToDos(toDoswithNew))

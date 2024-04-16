@@ -13,7 +13,8 @@ const Addtodo = ({ setToDos }) => {
     console.log(newTodo);
     fetch("http://localhost:3003/api/v1/todos", {
       method: "POST",
-      headers: { Content_Type: "application/json" },
+      // headers: { Content_Type: "application/json" }, das war der FEHLER!!!!
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newTodo),
     }).then((res) =>
       res
