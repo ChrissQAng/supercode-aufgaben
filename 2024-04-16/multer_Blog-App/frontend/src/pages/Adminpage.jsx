@@ -3,6 +3,8 @@ import "./Adminpage.css";
 
 const Adminpage = ({ blog, setBlog }) => {
   const [attachment, setAttachment] = useState();
+  const [blogTitle, setBlogTitle] = useState();
+  const [blogText, setBlogText] = useState();
 
   const addNewBlogItem = (event) => {
     event.preventDefault();
@@ -21,24 +23,22 @@ const Adminpage = ({ blog, setBlog }) => {
       .then((res) => res.json())
       .then((data) => {
         const newBlogItem = {
-          title: data.title,
+          title: blogTitle,
           image: data.image,
-          text: data.text,
+          text: blogText,
         };
-        return newBlogItem;
-      })
-      .then((newBlogItem) =>
+        console.log(newBlogItem);
         fetch("http://localhost:3003/api/v1/blog", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newBlogItem),
         })
-      )
-      .then((res) => res.json())
-      .then((data) => {
-        setBlog(data);
-      })
-      .catch((err) => console.log(err));
+          .then((res) => res.json())
+          .then((data) => {
+            setBlog(data);
+          })
+          .catch((err) => console.log(err));
+      });
   };
   return (
     <>
@@ -46,12 +46,20 @@ const Adminpage = ({ blog, setBlog }) => {
       <div className="box">
         <h2>NEW POST</h2>
         <form>
-          <input type="text" placeholder="title" />
+          <input
+            type="text"
+            placeholder="title"
+            onChange={(e) => setBlogTitle(e.target.value)}
+          />
           <input
             type="file"
             onChange={(e) => setAttachment(e.target.files[0])}
           />
-          <input type="text" placeholder="text" />
+          <input
+            type="text"
+            placeholder="text"
+            onChange={(e) => setBlogText(e.target.value)}
+          />
           <button onClick={addNewBlogItem}>SUBMIT</button>
         </form>
       </div>
