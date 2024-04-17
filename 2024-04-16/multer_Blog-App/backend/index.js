@@ -44,5 +44,16 @@ app.post("/api/v1/blog", (req, res) => {
     );
 });
 
+// upload with multer
+
+const upload = multer({ dest: "./uploads" });
+app.post(
+  "/api/v1/blog/files/uploads",
+  upload.single("attachment"),
+  (req, res) => {
+    res.json({ image: req.file.image });
+  }
+);
+
 const PORT = 3003;
 app.listen(PORT, () => console.log("server ready at port: ", PORT));
