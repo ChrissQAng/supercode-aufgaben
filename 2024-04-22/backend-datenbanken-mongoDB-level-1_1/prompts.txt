@@ -1,0 +1,15 @@
+db.movieDetails.find({director: "Steven Spielberg"}, {title: 1, _id: 0})
+
+db.movieDetails.find({"tomato.userReviews":{$gt:40000}}).sort({"tomato.userReviews":-1}).limit(5)
+
+db.movieDetails.find({year:{$gte:2000, $lte:2005}}, {title:true, year:true}).limit(20)
+
+db.movieDetails.find({$and:[{"tomato.userRating":{$gte:4}}, {year: {$gt:2010}}]}, {title:true, director:true}), 
+
+
+
+
+
+db.movieDetails.find({tomato: {$exists:false}})
+
+db.movieDetails.find({'imdb.votes':{$gt:100, $lt:1000}}, {title:true, 'imdb.rating':true}).limit(20)
