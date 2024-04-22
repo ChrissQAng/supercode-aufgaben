@@ -7,7 +7,7 @@ db.movieDetails.find({year:{$gte:2000, $lte:2005}}, {title:true, year:true}).lim
 db.movieDetails.find({$and:[{"tomato.userRating":{$gte:4}}, {year: {$gt:2010}}]}, {title:true, director:true}), 
 
 
-
+db.movieDetails.find({$and:[{'tomato.userReviews':{$lt:1000}}, {year: {$lt:2010}}]}).sort({'tomato.userReviews':1}).limit(10)
 
 
 db.movieDetails.find({tomato: {$exists:false}})
