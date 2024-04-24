@@ -1,0 +1,7 @@
+@font-face {
+  font-family: poppins;
+  src: url(../public/fonts/Poppins-Regular.ttf);
+}
+html {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+}

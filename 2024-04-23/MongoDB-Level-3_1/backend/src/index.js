@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import cors from "cors";
 import { findAll } from "./db-access/moviesDAO.js";
 import { findById } from "./db-access/moviesDAO.js";
 import { ObjectId } from "mongodb";
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(cors());
 
 // thunder-client test
 app.get("/", (req, res) => res.json({ hello: "world" }));
