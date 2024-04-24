@@ -37,11 +37,11 @@ const PORT = 3006;
 app.listen(PORT, () => console.log("server ready at port", PORT));
 
 // add fav to movies
-app.post("api/v1/movies:movId/fav", (req, res) => {
-  const favToggle = {
-    // favStatus: req.body.favStatus,
-    req.body._id,
-    favId: ObjectId.createFromHexString(req.params.favId),
-  };
-  createFav(newFavToggle).then(toggleFav);
-});
+// app.post("api/v1/movies:movId/fav", (req, res) => {
+//   const favToggle = {
+//     // favStatus: req.body.favStatus,
+//     req.body._id,
+//     favId: ObjectId.createFromHexString(req.params.favId),
+//   };
+//   createFav(newFavToggle).then(toggleFav);
+// });
