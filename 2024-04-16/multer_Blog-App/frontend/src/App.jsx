@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [blog, setBlog] = useState([]);
-  console.log(blog);
+  // console.log(blog);
   return (
     <>
       <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
             path="/"
             element={<Homepage blog={blog} setBlog={setBlog} />}
           />
-          <Route path="/detailpage/:id" element={<Detailpage />} />
+          <Route path="/detailpage/:id" element={<Detailpage blog={blog} />} />
           <Route
             path="/admin"
             element={<Adminpage blog={blog} setBlog={setBlog} />}

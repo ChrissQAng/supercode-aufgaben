@@ -29,14 +29,19 @@ app.get("/api/v1/blog", (req, res) => {
 
 // POST
 app.post("/api/v1/blog", (req, res) => {
-  const newBlogItem = {
-    id: Date.now(),
-    title: req.body.title,
-    image: req.body.image,
-    text: req.body.text,
-  };
   readBlog()
-    .then((blog) => [...blog, newBlogItem])
+    .then((blog) => {
+      const idArray = blog.map((item) => item.id);
+      const newId = Math.max(...idArray) + 1;
+      console.log("neuer log" + blog);
+      const newBlogItem = {
+        id: newId,
+        title: req.body.title,
+        image: req.body.image,
+        text: req.body.text,
+      };
+      return [...blog, newBlogItem];
+    })
     .then((blogWithNewItem) => writeBlog(blogWithNewItem))
     .then((blogWithNewItem) => res.status(200).json(blogWithNewItem))
     .catch((err) =>
