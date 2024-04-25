@@ -6,8 +6,10 @@ import { findById } from "./db-access/moviesDAO.js";
 import { updateOne } from "./db-access/moviesDAO.js";
 import { createOne } from "./db-access/moviesDAO.js";
 import { deleteOne } from "./db-access/moviesDAO.js";
-import { ObjectId } from "mongodb";
 import { createFav } from "./db-access/favoritesDAO.js";
+import { deleteFav } from "./db-access/favoritesDAO.js";
+import { findAllFavs } from "./db-access/favoritesDAO.js";
+import { ObjectId } from "mongodb";
 
 const app = express();
 
@@ -18,6 +20,7 @@ app.use(cors());
 // thunder-client test
 app.get("/", (req, res) => res.json({ hello: "world" }));
 
+// COLLECTION movieDetails
 // get all
 app.get("/api/v1/movies", (req, res) => {
   findAll()
@@ -68,6 +71,45 @@ app.patch("/api/v1/movies/:mID", (req, res) => {
     .catch((err) => {
       console.log(err);
       res.status(500).json({ err, message: "Could not modify movie" });
+    });
+});
+
+// COLLECTION favs
+
+app.get("/api/v1/favs", (req, res) => {
+  findAllFavs()
+    // .then((data) => console.log(data))
+    .then((allFavIds) => allFavIds.map((x) => x.movieId))
+    .then((movieIds) => movieIds.map((id) => findById(id)))
+    .then((promises) => Promise.all(promises).then((data) => res.json(data)))
+
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ err, message: "Could not find all movies" });
+    });
+});
+
+app.post("/api/v1/favs", (req, res) => {
+  const newMovieId = req.body;
+  findAllFavs().then((favIds) => {
+    if (favIds.findIndex((x) => x.movieId === newMovieId.movieId) === -1) {
+      createFav(newMovieId)
+        .then((addedMovieId) => res.json(addedMovieId || {}))
+        .catch((err) => {
+          console.log(err);
+          res.status(500).json({ err, message: "Could not add movie to fav" });
+        });
+    }
+  });
+});
+
+app.delete("/api/v1/favs/:mID", (req, res) => {
+  const mID = req.params.mID;
+  deleteFav(mID)
+    .then((deletedMovie) => res.json(deletedMovie || {}))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ err, message: "Could not delete movie from fav" });
     });
 });
 
