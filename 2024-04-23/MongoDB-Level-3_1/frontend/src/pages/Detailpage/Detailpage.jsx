@@ -50,13 +50,15 @@ const Detailpage = () => {
         alt={movie.title}
       />
       <div>
-        {/* {movie.genres.map((genre) => (
-          <p key={movie._id}>{genre}</p>
-        ))} */}
+        {movie.genres?.map((genre, index) => (
+          <p key={index}>{genre}</p>
+        ))}
       </div>
       <h1>Story</h1>
       <p>{movie.plot}</p>
-      <p>{/* Rating: {movie.imdb.rating} Duration: {movie.runtime}min */}</p>
+      <p>
+        Rating: {movie.imdb?.rating} Duration: {movie?.runtime}min
+      </p>
     </section>
   );
 };
