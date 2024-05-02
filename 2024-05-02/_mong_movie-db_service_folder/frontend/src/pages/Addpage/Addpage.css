@@ -1,0 +1,27 @@
+.add {
+  background-color: #264653;
+}
+.add h3 {
+  font-size: 4.0625rem;
+  color: #a16171;
+}
+.add form {
+  margin: auto;
+  padding: 100px;
+  background-color: #264653;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 30vw;
+}
+.add input,
+.add textarea,
+.add button {
+  background-color: #264653;
+  font-size: 2rem;
+  border-radius: 15px;
+}
+.add button {
+  background-color: #2a9d8f;
+  color: white;
+}
