@@ -3,8 +3,7 @@ import mongoose from "mongoose";
 const quizSchema = new mongoose.Schema(
   {
     name: { type: String },
-    description: {type: String},
-    questionsId: [{ type: mongoose.Types.ObjectId }],
+    description: { type: String },
   },
   { collection: "quiz", timestamps: false }
 );

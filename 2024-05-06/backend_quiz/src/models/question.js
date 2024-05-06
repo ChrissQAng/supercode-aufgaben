@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 const questionSchema = new mongoose.Schema(
   {
     question: { type: String },
-    choices: [{ type: String }],
-    correctCoices: [{ type: String }],
+
+    quizId: { type: mongoose.Types.ObjectId },
   },
   { collection: "questions", timestamps: false }
 );
