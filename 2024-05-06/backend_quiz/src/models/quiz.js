@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const quizSchema = new mongoose.Schema(
   {
-    name: { type: String },
-    description: { type: String },
+    name: { type: String, required: true },
+    description: { type: String, required: true },
   },
-  { collection: "quiz", timestamps: false }
+  { collection: "quiz", timestamps: true }
 );
 
 export const Quiz = mongoose.model("Quiz", quizSchema);

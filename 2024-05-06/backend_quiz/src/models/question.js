@@ -2,17 +2,12 @@ import mongoose from "mongoose";
 
 const questionSchema = new mongoose.Schema(
   {
-    question: { type: String },
-
-    quizId: { type: mongoose.Types.ObjectId },
+    question: { type: String, required: true },
+    choices: [{ type: String, required: true }],
+    correctChoices: [{ type: String, required: true }],
+    quizId: { type: mongoose.Types.ObjectId, ref: "quiz", required: true },
   },
-  { collection: "questions", timestamps: false }
+  { collection: "questions", timestamps: true }
 );
 
 export const Question = mongoose.model("Question", questionSchema);
-
-// // {
-// //   question :"Welche Farbe hat die Sonne?",
-// //   choices: ["blau", "gelb", "rot", "grün"],
-// //   correctCoices: ["gelb"]
-// // }

@@ -1,13 +1,15 @@
-import { addAnswer } from "../services/addAnswer.js";
+import { AnswerService } from "../services/index.js";
 
 async function addNewAnswerCtrl(req, res) {
   try {
     const newAnswer = req.body;
-    const addedAnswer = await addAnswer(newAnswer);
+    const addedAnswer = await AnswerService.addAnswer(newAnswer);
     res.json(addedAnswer);
   } catch (err) {
     console.log(err);
-    res.status(500).json({ err, message: "Could not add new answer" });
+    res
+      .status(500)
+      .json({ err, message: err.message || "Could not add new answer" });
   }
 }
 

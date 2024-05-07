@@ -25,5 +25,5 @@ try {
   app.listen(PORT, () => console.log("Server listening at port", PORT));
 } catch (err) {
   console.log(err);
-  process.exit();
+  process.exit(1);
 }
