@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
     lastName: { type: String, required: true },
     email: { type: String, required: true },
     bio: { type: String, default: "I have no bio added yet ;-)" },
-    passwordHash: { type: String, required: true, trim: true }, // trim removes space at start and end of string
+    passwordHash: { type: String, required: true, trim: true },
     passwordSalt: { type: String, required: true, trim: true },
   },
   { collection: "users", timestamps: true }
