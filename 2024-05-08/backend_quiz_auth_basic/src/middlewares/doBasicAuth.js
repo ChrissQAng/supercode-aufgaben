@@ -11,7 +11,7 @@ export async function doBasicAuth(req, res, next) {
   if (!req.headers.authorization) return _invalidAuth("No authorization");
 
   //   TRANSFORM BASIC64 TO EMAIL AND PASSWORD
-  //   check if authorization is encoded in Basic64
+  //   check if authorization is encoded in Base64
   // ["Basic", "YWhtZWRAc3VwZXItY29kZS5kZTpoYWxsbzEyMw=="]
   const [authType, authInfoBase64] = req.headers.authorization.split(" ");
   if (authType !== "Basic") return _invalidAuth();

@@ -1,4 +1,4 @@
-import { Favorites } from "../models/favorites.js";
+import { Favorites } from "../models/Favorites.js";
 import { Movie } from "../models/Movies.js";
 
 export function showAllFavs() {

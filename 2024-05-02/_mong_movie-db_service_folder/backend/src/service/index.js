@@ -1,3 +1,4 @@
+import { addNewFav } from "./addNewFav.js";
 import { showAllFavs } from "./showAllFavs.js";
 import { showAllMovies } from "./showAllMovies.js";
 import { showOneMovieById } from "./showOneMovieById.js";
@@ -7,5 +8,6 @@ export const movieData = {
   showOneMovieById,
 };
 export const favData = {
-    showAllFavs
+  showAllFavs,
+  addNewFav,
 };

@@ -22,11 +22,10 @@ const Detailpage = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ movieId: mID }),
     })
-      // .then((res) => res.json())
-      // .then((jsonResponse) => console.log(jsonResponse))
-      // .then(() => navigate("/fav"))
-      // .catch((err) => console.log(err));
-      
+      .then((res) => res.json())
+      .then((jsonResponse) => console.log(jsonResponse))
+      .then(() => navigate("/fav"))
+      .catch((err) => console.log(err));
   };
 
   return (

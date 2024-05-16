@@ -5,7 +5,7 @@ import cors from "cors";
 import { ObjectId } from "mongodb";
 import { connectToDatabase } from "./models/index.js";
 import { Movie } from "./models/Movies.js";
-import { Favorites } from "./models/favorites.js";
+import { Favorites } from "./models/Favorites.js";
 
 import { movieData } from "./service/index.js";
 import { favData } from "./service/index.js";
@@ -94,17 +94,15 @@ app.get("/api/v1/favs", (req, res) => {
 
 app.post("/api/v1/favs", (req, res) => {
   const newMovieId = req.body;
-  Favorites.find({}).then((favIds) => {
-    if (favIds.findIndex((x) => x.movieId === newMovieId.movieId) === -1) {
-      Favorites.create(newMovieId)
-        .then((addedMovieId) => res.json(addedMovieId || {}))
-        .catch((err) => {
-          console.log(err);
-          res.status(500).json({ err, message: "Could not add movie to fav" });
-        });
-    }
-  });
+  try {
+    favData.addNewFav(newMovieId);
+    res.json({});
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ err, message: "Could not add movie to fav" });
+  }
 });
+
 // delete one fav
 app.delete("/api/v1/favs/:mID", (req, res) => {
   const mID = req.params.mID;
